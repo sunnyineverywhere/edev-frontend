@@ -1,11 +1,12 @@
 import Header from "@/components/header";
 import "../app/globals.css";
+import Layout from "@/components/home/layout";
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Layout />
     </div>
   );
 }
