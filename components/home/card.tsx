@@ -2,12 +2,8 @@ import "@/app/globals.css";
 
 export default function Card() {
   return (
-    <article className="flex flex-col shadow-lg">
-      <a
-        rel="noopener noreferrer"
-        href="#"
-        aria-label="Te nulla oportere reprimique his dolorum"
-      >
+    <article className="flex flex-col shadow-lg rounded-lg hover:scale-105">
+      <a rel="noopener noreferrer" href="#">
         <img
           alt=""
           className="object-cover w-full h-52 dark:bg-gray-500"
