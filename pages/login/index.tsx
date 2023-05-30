@@ -3,10 +3,10 @@ import Layout from "@/components/home/layout";
 
 export default function Home() {
   return (
-    <div>
-      <section className="py-20 sm:py-20 flex-col w-full h-full items-center">
-        <div className="container p-6 mx-auto space-y-12">
-          <div className="flex flex-col space-y-4 text-center items-center">
+    <div className="justify-center w-full relative">
+      <section className="absolute left-0 right-0 translate-y-1/3 flex justify-center flex-col items-center place-content-center">
+        <div className="container p-6 mx-auto">
+          <div className="flex flex-col text-center items-center">
             <svg
               width="400"
               height="400"
