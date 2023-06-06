@@ -1,12 +1,12 @@
 export default function ToogleInput(props) {
   return (
-    <div className="flex flex-wrap -mx-3 mb-2 p-2">
-      <div className="w-full px-3">
+    <div className="flex flex-wrap mb-2 mt-1 p-2">
+      <div className="w-full">
         <label
           className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
           htmlFor="grid-state"
         >
-          CATEGORY
+          {props.label}
         </label>
         <div className="relative">
           <select
