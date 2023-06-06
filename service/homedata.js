@@ -3,7 +3,7 @@ import axios from "axios";
 const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const client = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: NEXT_PUBLIC_API_URL,
 });
 
 export const getHomeData = async () => {
