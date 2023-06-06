@@ -9,7 +9,7 @@ export default function WritePage() {
   return (
     <div>
       <Header />
-      <div className="flex flex-col items-center justify-center w-full relative py-6 ">
+      <div className="flex flex-col md:translate-y-1/4 lg:translate-y-1/4 xl:translate-y-1/4  items-center justify-center w-full relative py-6 ">
         <form className="w-full max-w-lg">
           <TextInput label="Title" />
           <TextInput label="Details" />
