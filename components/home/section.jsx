@@ -1,6 +1,6 @@
 import "@/app/globals.css";
-import Card from "./card";
 import React, { useEffect, useState } from "react";
+import Card from "./card";
 
 export default function HomeSection(props) {
   const cardList =
