@@ -1,7 +1,6 @@
 import "@/app/globals.css";
 import LogInButton from "@/components/auth/logInButton";
 import LogInLogo from "@/components/auth/logInLogo";
-import Layout from "@/components/home/layout";
 import React, { useEffect } from "react";
 
 export default function LogInPage() {
