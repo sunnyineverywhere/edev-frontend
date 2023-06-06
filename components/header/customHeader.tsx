@@ -6,10 +6,10 @@ import UserButton from "./userButton";
 export default function CustomHeader() {
   return (
     <div className="flex flex-row items-end justify-end mr-4">
-      <Link href="#">
+      <Link href="/write">
         <CreateButton />
       </Link>
-      <Link href="#">
+      <Link href="/user">
         <UserButton />
       </Link>
     </div>
