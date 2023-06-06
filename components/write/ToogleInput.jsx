@@ -1,6 +1,6 @@
 export default function ToogleInput(props) {
   return (
-    <div className="flex flex-wrap mb-2 mt-1 p-2">
+    <div className="flex-1 mb-2 mt-1 p-2">
       <div className="w-full">
         <label
           className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
