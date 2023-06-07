@@ -1,4 +1,5 @@
 import axios from "axios";
+import { headers } from "next/dist/client/components/headers";
 
 const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
 
@@ -25,3 +26,33 @@ export const getPostsInMain = async () => {
     return [];
   }
 };
+
+const jwtUtil = () => {
+  return localStorage.getItem("jwt");
+};
+
+export default function addPost(req) {
+  const jwt = jwtUtil();
+  if (jwt) {
+    try {
+      const response = client.post(
+        "/posts",
+        {
+          title: req.title,
+          contents: req.detail,
+          url: req.url,
+          category: req.category,
+          isPublic: req.isPublic,
+        },
+        {
+          headers: {
+            Authorization: jwt,
+          },
+        }
+      );
+    } catch (error) {
+      console.log(error);
+      return;
+    }
+  }
+}

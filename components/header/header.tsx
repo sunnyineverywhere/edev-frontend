@@ -11,7 +11,6 @@ export default function Header() {
       jwt = localStorage.getItem("jwt") || "";
     }
     if (jwt) {
-      console.log(jwt);
       return true;
     } else false;
   };

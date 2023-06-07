@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import TextInput from "../../components/write/TextInput";
 import ToogleInput from "../../components/write/ToogleInput";
 import FormButton from "../../components/write/FormButton";
+import addPost from "../../service/post";
 
 export default function WritePage() {
   const categoryList = [
@@ -52,6 +53,7 @@ export default function WritePage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(values);
+    addPost(values);
   };
   return (
     <div>

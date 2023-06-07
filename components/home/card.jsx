@@ -1,7 +1,6 @@
 import "@/app/globals.css";
 
 export default function Card(props) {
-  console.log(props);
   return (
     <article className="flex flex-col border-solid border-2 border-gray-100 rounded-lg hover:scale-105">
       <a className="flex flex-col flex-1 p-6" href={props.url}>
