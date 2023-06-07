@@ -1,12 +1,12 @@
 import "@/app/globals.css";
 import HomeSection from "./section";
 import React, { useEffect, useState } from "react";
-import { getHomeData } from "../../service/homedata";
+import { getPostsInMain } from "../../service/post";
 
 export default function Layout() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    const result = getHomeData();
+    const result = getPostsInMain();
     console.log(result);
     Promise.resolve(result).then((value) => setData(value));
     console.log(data[0]);

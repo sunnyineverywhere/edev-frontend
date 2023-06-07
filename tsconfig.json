@@ -29,7 +29,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/home/card.jsx",
-    "components/home/layout.jsx"
+    "components/home/layout.jsx",
+    "pages/write/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

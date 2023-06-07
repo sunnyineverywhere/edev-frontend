@@ -6,7 +6,7 @@ const client = axios.create({
   baseURL: NEXT_PUBLIC_API_URL,
 });
 
-export const getHomeData = async () => {
+export const getPostsInMain = async () => {
   let result = [];
   try {
     const resposne = await client.get("/posts");
