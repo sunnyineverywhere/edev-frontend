@@ -19,9 +19,9 @@ export default function Header() {
     return (
       <nav className="relative z-50 h-24">
         <div className="container relative flex flex-row items-center justify-between h-24 mx-auto font-medium border-b border-gray-200 overflow-visible sm:margin-left-4 md:px-2 lg:px-0 ">
-          <div className="flex items-center justify-start w-1/4 h-full pr-4">
+          <div className="flex items-center justify-start w-1/4 h-full">
             <Link href="/" className="inline-block py-4 md:py-0 sm:px-2">
-              <span className="h3 text-2xl font-black leading-none sm:left-2 ml-2 text-gray-900">
+              <span className="h3 whitespace-nowrap text-2xl font-black leading-none sm:left-2 ml-3 text-gray-900">
                 <span className="text-green-900">E</span>-DEV.
               </span>
             </Link>
