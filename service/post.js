@@ -54,5 +54,6 @@ export default function addPost(req) {
       console.log(error);
       return;
     }
+    return true;
   }
 }

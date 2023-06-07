@@ -52,8 +52,11 @@ export default function WritePage() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values);
-    addPost(values);
+    if (addPost(values)) {
+      window.location.href = "https://edev.co.kr";
+    } else {
+      alert("입력이 되지 않았습니다. 다시 시도해주세요!");
+    }
   };
   return (
     <div>
