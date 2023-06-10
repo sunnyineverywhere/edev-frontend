@@ -1,10 +1,12 @@
 import Link from "next/link";
 import "@/app/globals.css";
+import { useRouter } from "next/router";
 
 export default function LogoutButton() {
+  const router = useRouter();
   const onClick = () => {
     window.localStorage.removeItem("jwt");
-    window.location.href = "https://edev.co.kr";
+    router.push("/");
   };
   return (
     <div className="flex flex-row-reverse p-2">
