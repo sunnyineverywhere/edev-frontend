@@ -15,11 +15,13 @@ export default function UserInfoCard(props) {
         </div>
         <div class="w-full md:mt-0 md:w-2/5">
           <form>
-            <UserName name="sun" />
-            <UserEmail email="ev@gmail.com" />
-            <FormButton name="이름 변경" />
+            <UserName name={props.name} />
+            <UserEmail email={props.email} />
+            <div className="flex flex-row-reverse">
+              <LogoutButton />
+              <FormButton name="이름 변경" />
+            </div>
           </form>
-          <LogoutButton />
         </div>
       </div>
     </div>

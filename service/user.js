@@ -20,7 +20,7 @@ export const getUserInfo = async () => {
     });
 
     if (resposne.data) {
-      console.log(resposne.data);
+      return resposne.data;
     } else {
       console.log("something wrong!");
     }

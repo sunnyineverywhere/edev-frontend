@@ -32,7 +32,8 @@
     "components/home/layout.jsx",
     "pages/write/index.jsx",
     "components/user/userInfo.jsx",
-    "components/user/logout.jsx"
+    "components/user/logout.jsx",
+    "pages/user/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -7,9 +7,7 @@ export default function Layout() {
   const [data, setData] = useState([]);
   useEffect(() => {
     const result = getPostsInMain();
-    console.log(result);
     Promise.resolve(result).then((value) => setData(value));
-    console.log(data[0]);
   }, []);
   return (
     <section className="py-6 sm:py-12 ">
