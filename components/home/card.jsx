@@ -41,6 +41,9 @@ export default function Card(props) {
         <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">
           {props.title}
         </h3>
+        <p className="flex-1 py-2 text-sm text-gray-700 font-normal leading-snug">
+          {props.contents}
+        </p>
         <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-500">
           <span></span>
           <span>{props.author}</span>

@@ -12,6 +12,7 @@ export default function HomeSection(props) {
         title={value.title}
         category={value.category}
         url={value.url}
+        contents={value.contents}
       />
     ));
 
