@@ -97,7 +97,7 @@ export default function WritePage() {
               list={publicList}
             />
           </div>
-          <FormButton onSubmit={handleSubmit} />
+          <FormButton onSubmit={handleSubmit} name="SUBMIT" />
         </form>
       </div>
     </div>

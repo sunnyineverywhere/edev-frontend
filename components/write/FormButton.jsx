@@ -13,7 +13,7 @@ export default function FormButton(props) {
         hover:bg-green-800 hover:shadow-lg
         focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring--green-700"
       >
-        SUBMIT
+        {props.name}
       </button>
     </div>
   );

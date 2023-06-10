@@ -6,17 +6,21 @@ const client = axios.create({
   baseURL: NEXT_PUBLIC_API_URL,
 });
 
-export const getPostsInMain = async () => {
-  let result = [];
+const jwtUtil = () => {
+  return localStorage.getItem("jwt");
+};
+
+export const getUserInfo = async () => {
+  const jwt = jwtUtil();
   try {
-    const resposne = await client.get("/posts");
+    const resposne = await client.get("/members", {
+      headers: {
+        Authorization: jwt,
+      },
+    });
 
     if (resposne.data) {
-      result.push(resposne.data.hot);
-      result.push(resposne.data.article);
-      result.push(resposne.data.retrospect);
-      result.push(resposne.data.review);
-      return result;
+      console.log(resposne.data);
     } else {
       console.log("something wrong!");
     }
@@ -26,10 +30,7 @@ export const getPostsInMain = async () => {
   }
 };
 
-const jwtUtil = () => {
-  return localStorage.getItem("jwt");
-};
-
+/*
 export default function addPost(req) {
   const jwt = jwtUtil();
   if (jwt) {
@@ -56,3 +57,4 @@ export default function addPost(req) {
     return true;
   }
 }
+*/

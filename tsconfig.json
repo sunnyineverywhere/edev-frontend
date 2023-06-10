@@ -30,7 +30,8 @@
     ".next/types/**/*.ts",
     "components/home/card.jsx",
     "components/home/layout.jsx",
-    "pages/write/index.jsx"
+    "pages/write/index.jsx",
+    "components/user/userInfo.jsx"
   ],
   "exclude": ["node_modules"]
 }
