@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import UserName from "./userName";
 import UserEmail from "./userEmail";
 import FormButton from "../write/FormButton";
+import LogoutButton from "./logout";
 
 export default function UserInfoCard(props) {
   return (
@@ -18,6 +19,7 @@ export default function UserInfoCard(props) {
             <UserEmail email="ev@gmail.com" />
             <FormButton name="이름 변경" />
           </form>
+          <LogoutButton />
         </div>
       </div>
     </div>
